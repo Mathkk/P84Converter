@@ -3,12 +3,12 @@ import os
 
 def hex_replacement(file, blasters_hex, normalbattle_hex):
     with open(file, 'rb') as file:
-        conteudo = file.read()
+        content = file.read()
 
-    conteudo = conteudo.replace(bytes.fromhex(blasters_hex), bytes.fromhex(normalbattle_hex))
+    content = content.replace(bytes.fromhex(blasters_hex), bytes.fromhex(normalbattle_hex))
 
     with open(file, 'wb') as file:
-        file.write(conteudo)
+        file.write(content)
 
 if len(sys.argv) != 2:
     print("""You have to use: python BlastersToNormalBattle.py [your_folder_name], ur nerd🤓""")
