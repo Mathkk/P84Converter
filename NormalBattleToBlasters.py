@@ -1,17 +1,17 @@
 import sys
 import os
 
-def hex_replacement(file, normalbattle_hex, blasters_hex):
-    with open(file, 'rb') as file:
+def hex_replacement(file_path, blasters_hex, normalbattle_hex):
+    with open(file_path, 'rb') as file:
         content = file.read()
 
-    content = content.replace(bytes.fromhex(normalbattle_hex), bytes.fromhex(blasters_hex))
+    content = content.replace(bytes.fromhex(blasters_hex), bytes.fromhex(normalbattle_hex))
 
-    with open(file, 'wb') as file:
-        file.write(content)
+    with open(file_path, 'wb') as file_write:
+        file_write.write(content)
 
 if len(sys.argv) != 2:
-    print("""You have to use: python NormalBattleToBlasters.py [your_folder_name], ur nerd🤓""")
+    print("""You have to use: python BlastersToNormalBattle.py [your_folder_name], ur nerd🤓""")
     sys.exit(1)
 
 folder_name = sys.argv[1]
