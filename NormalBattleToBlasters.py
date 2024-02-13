@@ -44,11 +44,11 @@ for file in os.listdir(folder_path):
 #Guard
         hex_replacement(full_path, "B1014E48", "477AAA9D")
 #Victory Pose 1
-        hex_replacement(full_path, "AB007C21", "DEE71A37")
+        hex_replacement(full_path, "56E44DEC", "DEE71A37")
 #Victory Pose 2
-        hex_replacement(full_path, "115175B8", "B8CDC1CC")
+        hex_replacement(full_path, "95B760C7", "B8CDC1CC")
 #Victory Pose 3
-        hex_replacement(full_path, "876172CF", "45181E68")
+        hex_replacement(full_path, "D4867BDE", "45181E68")
 #Damage
         hex_replacement(full_path, "D6D68B14", "84658040")
 #Death
