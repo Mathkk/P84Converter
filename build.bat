@@ -1,0 +1,1 @@
+pyinstaller P84Converter.py --onefile
