@@ -17,4 +17,4 @@ After that import your .mtninf files back to your [CharacterID]_p84 file and ren
 
 ---------------------------------------------------------------------
 
-WARNING: This script DOES NOT converted files from YKW3/B2 to work in YKW2/YKWB1
+WARNING: This script DOES NOT convert files from YKW3/B2 to work in YKW2/YKWB1
